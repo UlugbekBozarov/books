@@ -21,6 +21,8 @@ export default function createIconButton(options = {}) {
       justifyContent: "center",
       alignItems: "center",
       borderRadius: "50%",
+      border: "none",
+      background: "transparent",
       ...sx,
     };
   });

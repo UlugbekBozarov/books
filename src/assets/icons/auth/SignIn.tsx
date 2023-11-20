@@ -1,23 +1,22 @@
 import { memo } from "react";
 
-const Close = ({ width = "16", height = "17", stroke = "#1C1E23" }) => {
+const SignIn = ({ width = "20", height = "20", stroke = "#1C274C" }) => {
   return (
     <svg
       width={width}
       height={height}
-      viewBox="0 0 16 17"
+      viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M3.33398 3.83325L12.6667 13.166"
+        d="M20 12C20 7.58172 16.4183 4 12 4M12 20C14.5264 20 16.7792 18.8289 18.2454 17"
         stroke={stroke}
         strokeWidth="1.5"
         strokeLinecap="round"
-        strokeLinejoin="round"
       />
       <path
-        d="M3.33331 13.166L12.666 3.83325"
+        d="M4 12H14M14 12L11 9M14 12L11 15"
         stroke={stroke}
         strokeWidth="1.5"
         strokeLinecap="round"
@@ -27,4 +26,4 @@ const Close = ({ width = "16", height = "17", stroke = "#1C1E23" }) => {
   );
 };
 
-export default memo(Close);
+export default memo(SignIn);

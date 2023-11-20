@@ -4,16 +4,17 @@ import { Outlet } from "react-router-dom";
 import { Spinner } from "components";
 
 import { Footer, Navbar } from "./components";
+import { Main } from "./Layout.style";
 
 const Layout = () => {
   return (
     <Fragment>
       <Navbar />
-      <main>
+      <Main>
         <Suspense fallback={<Spinner />}>
           <Outlet />
         </Suspense>
-      </main>
+      </Main>
       <Footer />
     </Fragment>
   );

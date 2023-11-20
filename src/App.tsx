@@ -29,9 +29,17 @@ function App() {
         values,
       },
       color: {
-        main: "63, 81, 181",
-        white: "255, 255, 255",
-        black: "0, 0, 0",
+        main: "#1976d2",
+        light: "#42a5f5",
+        dark: "#1565c0",
+        contrastText: "#fff",
+        inputIcon: "rgba(0, 0, 0, 0.6)",
+        white: "#fff",
+        black: "#000",
+        background: "#fff",
+        border: "rgba(0, 0, 0, 0.12)",
+        bgHover: "rgba(0, 0, 0, 0.04)",
+        bgActive: "rgba(0, 0, 0, 0.1)",
       },
     };
   }, []);

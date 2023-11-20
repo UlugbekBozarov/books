@@ -13,8 +13,9 @@ export default function createTypography(options = {}) {
   const TypographyRoot = styled("p", {
     shouldForwardProp: (prop) =>
       prop !== "theme" && prop !== "sx" && prop !== "as" && prop !== "color",
-  })(({ theme, color = "block", sx = {} }) => ({
+  })(({ theme, color = "block", textAlign, sx = {} }) => ({
     color: `rgb(${get(theme, `color.${color}`)})`,
+    textAlign: textAlign,
     ...sx,
   }));
 
